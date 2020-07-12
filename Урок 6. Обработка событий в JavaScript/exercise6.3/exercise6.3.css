@@ -7,21 +7,94 @@ body {
 header {
     width: 100%;
     height: 50px;
-    background-color: grey;
+    background-color: yellow;
+    position: relative;
+    z-index: 1;
 }
 
 .basket {
-    width: 400px;
+    width: 600px;
     height: 500px;
-    display: none;
-    background-color: #00aced;
+    display: block;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 50px;
+    left: calc(100% - 600px);
+    z-index: 3;
+}
 
+.basket-hide {
+    display: none;
+}
+
+.basket-head {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.basket-head .id, .count{
+    height: 100%;
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+}
+
+.basket-head .price, .delete{
+    height: 100%;
+    display: inline-block;
+    width: 80px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+}
+.basket-head .name{
+    height: 100%;
+    display: inline-block;
+    width: 340px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+}
+
+.basketRow {
+    height: 40px;
+    width: 100%;
+    display: flex;
 }
 
 .fas.fa-shopping-basket {
     font-size: 40px;
     cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    left: calc(100% - 55px);
+    z-index: 3;
 }
+
+.product {
+    display: inline-block;
+    width: 200px;
+    margin: 25px;
+}
+
+.product-title, .price {
+    display: block;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.buy {
+    display: block;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
 
 
 

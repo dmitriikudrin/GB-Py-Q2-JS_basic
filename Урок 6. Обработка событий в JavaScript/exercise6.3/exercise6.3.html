@@ -9,8 +9,35 @@
 <body>
 
 <header>
-    <div class="basket">Корзина</div>
+    <div class="basket basket-hide">
+        <div class="basket-head">
+            <div class="id">id</div>
+            <div class="name">название</div>
+            <div class="price">Цена</div>
+            <div class="count">Кол-во</div>
+            <div class="delete">Удалить</div>
+        </div>
+    </div>
 </header>
+
+<div class="product">
+    <div class="product-title">товар 1</div>
+    <img src="https://placeimg.com/200/200/arch" alt="">
+    <div class="price">1000 &#8381</div>
+    <button class="buy" data-id="1" data-name="товар 1" data-price="1000">В корзину</button>
+</div>
+<div class="product">
+    <div class="product-title">товар 2</div>
+    <img src="https://placeimg.com/200/200/nature" alt="">
+    <div class="price">2000 &#8381</div>
+    <button class="buy" data-id="2" data-name="товар 2" data-price="2000">В корзину</button>
+</div>
+<div class="product">
+    <div class="product-title">товар 3</div>
+    <img src="https://placeimg.com/200/200/people" alt="">
+    <div class="price">3000 &#8381</div>
+    <button class="buy" data-id="3" data-name="товар 3" data-price="3000">В корзину</button>
+</div>
 
 <script src="exercise6.3.js"></script>
 </body>
