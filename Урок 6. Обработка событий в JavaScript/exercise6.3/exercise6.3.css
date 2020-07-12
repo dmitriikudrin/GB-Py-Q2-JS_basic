@@ -51,6 +51,7 @@ header {
     line-height: 40px;
     text-align: center;
 }
+
 .basket-head .name{
     height: 100%;
     display: inline-block;
@@ -66,6 +67,34 @@ header {
     display: flex;
 }
 
+.basketRow .id, .count{
+    height: 100%;
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+}
+
+.basketRow .price, .delete{
+    height: 100%;
+    display: inline-block;
+    width: 80px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+}
+.basketRow .name{
+    height: 100%;
+    display: inline-block;
+    width: 340px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
 .fas.fa-shopping-basket {
     font-size: 40px;
     cursor: pointer;
@@ -73,6 +102,10 @@ header {
     position: absolute;
     left: calc(100% - 55px);
     z-index: 3;
+}
+
+.fas.fa-trash-alt {
+    cursor: pointer;
 }
 
 .product {
