@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.slider {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.slide-hidden {
+    visibility: hidden;
+}
+
+.fas.fa-spinner.fa-spin {
+    font-size: 50px;
+    color: grey;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+}
+
+.slider-leftIcon, .slider-rightIcon {
+    font-size: 50px;
+    color: grey;
+    position: absolute;
+    top: calc(50% - 25px);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.slider-leftIcon {
+    left: 25px;
+}
+
+.slider-rightIcon {
+    right: 25px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.slider-animation-showToRight {
+    animation-name: showToRight;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    position: relative;
+}
+
+@keyframes showToRight {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slider-animation-showToLeft {
+    animation-name: showToLeft;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    position: relative;
+}
+
+@keyframes showToLeft {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
