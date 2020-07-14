@@ -125,8 +125,6 @@ let user = {
         this.increaseLocationX();
         this.increaseLocationY();
     },
-
-
 }
 
 function game() {
