@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 225px;
+}
+
+.cell_white {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.cell_black {
+    background-color: #e2adad;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.cell_head {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+}
